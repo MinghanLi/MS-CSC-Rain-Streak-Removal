@@ -120,8 +120,8 @@ function [B, Rain,F, RainS, Filters, Mask] = CSCderain(X_Fold, param, par)
  
         %% Upadate feathur map 
         disp(' Update Map ...');
-        [ Map, RainS ] = SynthesisSC( reshape(Q-T,size(X_Fold)), Filters, par, FInd ); % Z[(h+f_size-1),(w+f_size-1),n,K]; RainS [h,w,n,K]  
-        Rain = Unfold(sum(RainS,4),size(X_Fold),3)';
+        [Map, RainS]= CSC_ADMM_GPU( reshape(Q-T,size(X_Fold)), Filters, par.b, 200);
+        Rain = reshape(sum(RainS,4),size(X));
         
         
         %% Update Foreground
@@ -229,15 +229,5 @@ Filters = zeros(size(oriF));
 Filters(FInd) = f_vec;
 end
 
-function [ M, Rain ] = SynthesisSC( X, Filters, par, FInd )
-% UNTITLED2 Summary of this function goes here
-% Detailed explanation goes here
-[h,w,n] = size(X); mu=par.b; f_size=par.f_size;
-for k=1:size(Filters,3)
-    Fk = Filters(:,:,k);Temp = reshape(Fk(FInd(:,:,k)),[f_size(k),f_size(k)]);
-    FFilters(:,:,:,k) = psf2otf(rot90(Temp,2),[h,w,n]);                     % [h+2*CutEdge,w+2*CutEdge,K]
-end
-[M, Rain]= CSC_ADMM_GPU( fft2(X), single(FFilters), mu, 200);
-end
 
 

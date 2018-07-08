@@ -12,7 +12,7 @@ param.lambda = 1;                                                           % la
 param.weight = 1; 
 param.rho =0.6; par.r=1;
 par.f_size =[13 9 5];     
-par.MaxIter = 1; par.method =1;                                             % 1 denotes WLRA; 2 denotes Efficient MC
+par.MaxIter = 2; par.method =1;                                             % 1 denotes WLRA; 2 denotes Efficient MC
 par.b = 1e-2*zeros(size(par.f_size)); 
 par.Mask = 1;                                                               % 0 denotes no moving objects  
 par.Flam = 10; 
