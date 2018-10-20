@@ -6,7 +6,9 @@ max_rho = 1e5; rho=1; tol = 1e-10;
 iter = 1; Cond = 1;
 
 lambda=repmat(reshape(lambda,[1,1,1,K]),[h,w,n,1]);
-Filters = psf2otf(rot90(F,2),[h,w,n,K]);
+for k=1:K
+    Filters(:,:,:,k) = psf2otf(rot90(F(:,:,k),2),[h,w,n]);
+end
 FX = fft2(single(X));
 MU =  zeros(size(Filters),'single');
 Y =  zeros(size(Filters),'single');
