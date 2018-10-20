@@ -7,7 +7,9 @@ iter = 1; Cond = 1;
 
 lambda=gpuArray(repmat(reshape(lambda,[1,1,1,K]),[h,w,n,1]));
 F = gpuArray(single(F));
-Filters = psf2otf(rot90(F,2),[h,w,n,K]);
+for k=1:K
+    Filters(:,:,:,k) = psf2otf(rot90(F(:,:,k),2),[h,w,n]);
+end
 FX = gpuArray(fft2(single(X)));
 MU =  gpuArray.zeros(size(Filters),'single');
 Y =  gpuArray.zeros(size(Filters),'single');
