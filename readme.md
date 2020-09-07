@@ -58,4 +58,4 @@ Thanks for sharing!
 
 ================================================================================================
 
-If you have any questions, please feel free to contact Minghan Li(liminghan@stu.xjtu.edu.cn).
+If you have any questions, please feel free to contact Minghan Li(liminghan0330@gmail.com).
