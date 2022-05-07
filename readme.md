@@ -2,7 +2,7 @@ README
 ================================================================================================
 Version 1.0, 28-Apr-2018
 
-This package contains the MATLAB implementation of "Video Rain Streak Removal By Multiscale Convolutional Sparse Coding".
+This package contains the MATLAB implementation of "Video Rain Streak Removal By Multiscale Convolutional Sparse Coding"[link](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Video_Rain_Streak_CVPR_2018_paper.pdf).
 
 The code has been tested with MATLAB 2017b on Windows.
 
