@@ -1,9 +1,8 @@
-README
-
 [Video Rain Streak Removal By Multiscale Convolutional Sparse Coding](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Video_Rain_Streak_CVPR_2018_paper.pdf)
+
 [project](https://sites.google.com/view/cvpr-anonymity) [dataset](http://gr.xjtu.edu.cn/web/dymeng/2)
 
-================================================================================================
+=========================================================
 Version 1.0, 28-Apr-2018
 
 The code has been tested with MATLAB 2017b on Windows.
@@ -12,12 +11,6 @@ Use of this code is free for research purposes only. Shall not be used for comme
 All copyrights belong to the original authors. The technology has applied for patents. If you 
 want to purchase the patents for commercial purposes, please contact the corresponding author: 
 Deyu Meng, dymeng@mail.xjtu.edu.cn. Thank you!
-
-
-# Reference: 
-
-Minghan Li, Qi Xie, Qian Zhao, Wei Wei, Shuhang Gu, Jing Tao, Deyu Meng*, Video Rain Streak Removal By Multiscale Convolutional Sparse Coding. CVPR, 2018.
-
 
 # Usage: 
 
@@ -30,8 +23,7 @@ Minghan Li, Qi Xie, Qian Zhao, Wei Wei, Shuhang Gu, Jing Tao, Deyu Meng*, Video 
 
 Synthetic rain video: 
 
-'park.mat', 'highway.mat', 'man.mat', corresponding to 
-Fig. 3-5 in the reference. 
+'park.mat', 'highway.mat', 'man.mat', corresponding to Fig. 3-5 in the reference. 
 
 Real rain video: 'wall.mat', 'compfinal.mat', 'night.mat' corresponding to Fig. 6-8 in the reference, respectively.
 
@@ -41,7 +33,7 @@ The dataset can be downloaded from [here](http://gr.xjtu.edu.cn/web/dymeng/2) .
 
 
 
-# Acknowledgments 
+## Acknowledgments 
 
 Code partly borrows from:
 
@@ -51,7 +43,7 @@ in Video as Deterministic or Stochastic? ICCV, 2017.
 [2] Shuhang Gu, Deyu Meng, Wangmeng Zuo, Lei Zhang. Joint Convolutional Analysis and Synthesis Sparse Representation for Single Image Layer Separation. ICCV, 2017.
 Thanks for sharing!
 
-# Our latest paper
+# Reference and Our latest paper
 We propose a new online rain/snow removal method from surveillance videos by fully encoding the dynamic statistics of both rain/snow and background scenes in a video along time into the model, and realizing it with an online mode to make it potentially available to handle constantly coming streaming video sequence. 
 
 [Minghan Li](https://scholar.google.com/citations?user=LhdBgMAAAAAJ&hl=en&oi=ao),
