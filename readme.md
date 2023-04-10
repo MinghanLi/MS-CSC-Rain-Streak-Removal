@@ -61,6 +61,13 @@ We propose a new online rain/snow removal method from surveillance videos by ful
 Please go to the [Homepage](https://github.com/MinghanLi/OTMSCSC_matlab_2020) to obtain more information about our work.
 
 ```
+@inproceedings{li2018video,
+  title={Video rain streak removal by multiscale convolutional sparse coding},
+  author={Li, Minghan and Xie, Qi and Zhao, Qian and Wei, Wei and Gu, Shuhang and Tao, Jing and Meng, Deyu},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={6644--6653},
+  year={2018}
+}
 @article{Li2021OnlineRR,
   title={Online Rain/Snow Removal From Surveillance Videos},
   author={Minghan Li and Xiangyong Cao and Q. Zhao and L. Zhang and Deyu Meng},
