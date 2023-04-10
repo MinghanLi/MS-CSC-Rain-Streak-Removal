@@ -1,8 +1,10 @@
 README
+
+[Video Rain Streak Removal By Multiscale Convolutional Sparse Coding](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Video_Rain_Streak_CVPR_2018_paper.pdf)
+[project](https://sites.google.com/view/cvpr-anonymity) [dataset](http://gr.xjtu.edu.cn/web/dymeng/2)
+
 ================================================================================================
 Version 1.0, 28-Apr-2018
-
-This package contains the MATLAB implementation of "Video Rain Streak Removal By Multiscale Convolutional Sparse Coding"[link](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Video_Rain_Streak_CVPR_2018_paper.pdf).
 
 The code has been tested with MATLAB 2017b on Windows.
 
@@ -34,8 +36,8 @@ Fig. 3-5 in the reference.
 Real rain video: 'wall.mat', 'compfinal.mat', 'night.mat' corresponding to Fig. 6-8 in the reference, respectively.
 
  
-More experiments on real videos are shown in https://sites.google.com/view/cvpr-anonymity .
-The dataset can be downloaded from http://gr.xjtu.edu.cn/web/dymeng/2 .
+More experiments on real videos are shown in [project](https://sites.google.com/view/cvpr-anonymity) .
+The dataset can be downloaded from [here](http://gr.xjtu.edu.cn/web/dymeng/2) .
 
 
 
